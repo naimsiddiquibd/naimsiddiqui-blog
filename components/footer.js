@@ -2,7 +2,7 @@ import Container from "@components/container";
 import ThemeSwitch from "@components/themeSwitch";
 import Image from "next/image";
 import { myLoader } from "@utils/all";
-import VercelLogo from "../public/img/naim.svg";
+import VercelLogo from "../public/img/vercel.svg";
 
 export default function Footer(props) {
   return (
@@ -11,10 +11,24 @@ export default function Footer(props) {
         Copyright © {new Date().getFullYear()} {props?.copyright}. All
         rights reserved.
       </div>
+      <div className="mt-1 text-sm text-center text-gray-500 dark:text-gray-600">
+        Made by{" "}
+        {/*  // ** 🙏  Can I ask you a favor? 🙏 **
+            // Please do not remove the below link.
+           // It helps us to grow & continue our work. Thank you.
+          // OR contact hello@web3templates.com for commercial license.  */}
+        <a
+          href="https://www.web3templates.com/?ref=stablo-template"
+          rel="noopener"
+          target="_blank">
+          Web3Templates
+        </a>
+        {/* Do not remove above link */}
+      </div>
       <div className="flex items-center justify-between mt-2">
         <div className="mt-5">
           <a
-            href="https://naimsiddiui.me"
+            href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
             target="_blank"
             rel="noopener"
             className="relative block w-44">
@@ -22,7 +36,7 @@ export default function Footer(props) {
               src={VercelLogo}
               layout="fixed"
               loader={myLoader}
-              alt="Powered by Naim Siddiqui"
+              alt="Powered by Vercel"
               unoptimized={true}
               width="150"
               height="25"
