@@ -76,7 +76,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span>Web3Templates</span>
+      <span>Web</span>
     </a>
   );
 };
